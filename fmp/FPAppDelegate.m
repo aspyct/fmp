@@ -79,6 +79,7 @@
 
 - (void)savePreferences {
     [self saveClipboardPreferences];
+    [self saveExitPreferences];
     [self saveMasterInKeychain];
 }
 
@@ -87,8 +88,11 @@
         [self createPreferences];
     }
     
-    [self recoverClipboardPreferences];
     [self recoverMasterFromKeychain];
+    [self recoverExitPreferences];
+    [self recoverClipboardPreferences];
+    
+    [self adjustCheckboxes];
 }
 
 #define FP_PREFERENCES_EXIST @"FP_PREFERENCES_EXIST"
@@ -122,6 +126,25 @@
 }
 #undef FP_CLIPBOARD_PREFERENCE
 
+#define FP_EXIT_PREFERENCES @"FP_EXIT_PREFERENCES"
+- (void)createExitPreferences {
+    [[NSUserDefaults standardUserDefaults] setBool:NO forKey:FP_EXIT_PREFERENCES];
+}
+
+- (void)saveExitPreferences {
+    [[NSUserDefaults standardUserDefaults] setBool:(self.exitCheckbox.state == NSOnState) forKey:FP_EXIT_PREFERENCES];
+}
+
+- (void)recoverExitPreferences {
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:FP_EXIT_PREFERENCES]) {
+        self.exitCheckbox.state = NSOnState;
+    }
+    else {
+        self.exitCheckbox.state = NSOffState;
+    }
+}
+#undef FP_EXIT_PREFERENCES
+
 - (void)saveMasterInKeychain {
     
 }
@@ -131,6 +154,11 @@
 }
 
 - (IBAction)doChangeClipboardState:(id)sender {
+    [self adjustCheckboxes];
+}
+
+- (void)adjustCheckboxes {
+    self.exitCheckbox.enabled = self.clipboardCheckbox.state == NSOnState;
 }
 
 @end
