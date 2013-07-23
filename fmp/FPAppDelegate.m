@@ -56,6 +56,10 @@
             NSPasteboard *pboard = [NSPasteboard generalPasteboard];
             [pboard clearContents];
             [pboard writeObjects:@[generated]];
+            
+            if (self.exitCheckbox.state == NSOnState) {
+                [NSApp terminate:self];
+            }
         }
     }
 }
