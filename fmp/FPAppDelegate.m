@@ -39,10 +39,6 @@
     [self.passwordField becomeFirstResponder];
 }
 
-- (void)applicationWillTerminate:(NSNotification *)notification {
-    [self savePreferences];
-}
-
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender {
     return YES;
 }
@@ -159,10 +155,22 @@
 
 - (IBAction)doChangeClipboardState:(id)sender {
     [self adjustCheckboxes];
+    [self saveClipboardPreferences];
+}
+
+- (IBAction)doChangeExitState:(id)sender {
+    [self saveExitPreferences];
 }
 
 - (void)adjustCheckboxes {
     self.exitCheckbox.enabled = self.clipboardCheckbox.state == NSOnState;
+    
+    if (self.clipboardCheckbox.state == NSOffState) {
+        self.exitCheckbox.state = NSOffState;
+    }
+    else {
+        [self recoverExitPreferences];
+    }
 }
 
 @end
