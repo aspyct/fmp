@@ -1,0 +1,317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C5EF38F9179E83480082A475 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5EF38F8179E83480082A475 /* Cocoa.framework */; };
+		C5EF3903179E83480082A475 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C5EF3901179E83480082A475 /* InfoPlist.strings */; };
+		C5EF3905179E83480082A475 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EF3904179E83480082A475 /* main.m */; };
+		C5EF3909179E83480082A475 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C5EF3907179E83480082A475 /* Credits.rtf */; };
+		C5EF390C179E83480082A475 /* FPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EF390B179E83480082A475 /* FPAppDelegate.m */; };
+		C5EF390F179E83480082A475 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5EF390D179E83480082A475 /* MainMenu.xib */; };
+		C5EF391B179EAD740082A475 /* FPPasswordEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EF391A179EAD740082A475 /* FPPasswordEncoder.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C5EF38F5179E83480082A475 /* fmp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fmp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5EF38F8179E83480082A475 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C5EF38FB179E83480082A475 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C5EF38FC179E83480082A475 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C5EF38FD179E83480082A475 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C5EF3900179E83480082A475 /* fmp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "fmp-Info.plist"; sourceTree = "<group>"; };
+		C5EF3902179E83480082A475 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C5EF3904179E83480082A475 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C5EF3906179E83480082A475 /* fmp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fmp-Prefix.pch"; sourceTree = "<group>"; };
+		C5EF3908179E83480082A475 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		C5EF390A179E83480082A475 /* FPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FPAppDelegate.h; sourceTree = "<group>"; };
+		C5EF390B179E83480082A475 /* FPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FPAppDelegate.m; sourceTree = "<group>"; };
+		C5EF390E179E83480082A475 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C5EF3919179EAD740082A475 /* FPPasswordEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPPasswordEncoder.h; sourceTree = "<group>"; };
+		C5EF391A179EAD740082A475 /* FPPasswordEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPPasswordEncoder.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5EF38F2179E83480082A475 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5EF38F9179E83480082A475 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C5EF38EC179E83480082A475 = {
+			isa = PBXGroup;
+			children = (
+				C5EF38FE179E83480082A475 /* fmp */,
+				C5EF38F7179E83480082A475 /* Frameworks */,
+				C5EF38F6179E83480082A475 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C5EF38F6179E83480082A475 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5EF38F5179E83480082A475 /* fmp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5EF38F7179E83480082A475 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5EF38F8179E83480082A475 /* Cocoa.framework */,
+				C5EF38FA179E83480082A475 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5EF38FA179E83480082A475 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5EF38FB179E83480082A475 /* AppKit.framework */,
+				C5EF38FC179E83480082A475 /* CoreData.framework */,
+				C5EF38FD179E83480082A475 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C5EF38FE179E83480082A475 /* fmp */ = {
+			isa = PBXGroup;
+			children = (
+				C5EF390A179E83480082A475 /* FPAppDelegate.h */,
+				C5EF390B179E83480082A475 /* FPAppDelegate.m */,
+				C5EF390D179E83480082A475 /* MainMenu.xib */,
+				C5EF38FF179E83480082A475 /* Supporting Files */,
+				C5EF3919179EAD740082A475 /* FPPasswordEncoder.h */,
+				C5EF391A179EAD740082A475 /* FPPasswordEncoder.m */,
+			);
+			path = fmp;
+			sourceTree = "<group>";
+		};
+		C5EF38FF179E83480082A475 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5EF3900179E83480082A475 /* fmp-Info.plist */,
+				C5EF3901179E83480082A475 /* InfoPlist.strings */,
+				C5EF3904179E83480082A475 /* main.m */,
+				C5EF3906179E83480082A475 /* fmp-Prefix.pch */,
+				C5EF3907179E83480082A475 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5EF38F4179E83480082A475 /* fmp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5EF3912179E83480082A475 /* Build configuration list for PBXNativeTarget "fmp" */;
+			buildPhases = (
+				C5EF38F1179E83480082A475 /* Sources */,
+				C5EF38F2179E83480082A475 /* Frameworks */,
+				C5EF38F3179E83480082A475 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fmp;
+			productName = fmp;
+			productReference = C5EF38F5179E83480082A475 /* fmp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5EF38ED179E83480082A475 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FP;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Aspyct;
+			};
+			buildConfigurationList = C5EF38F0179E83480082A475 /* Build configuration list for PBXProject "fmp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C5EF38EC179E83480082A475;
+			productRefGroup = C5EF38F6179E83480082A475 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5EF38F4179E83480082A475 /* fmp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5EF38F3179E83480082A475 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5EF3903179E83480082A475 /* InfoPlist.strings in Resources */,
+				C5EF3909179E83480082A475 /* Credits.rtf in Resources */,
+				C5EF390F179E83480082A475 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5EF38F1179E83480082A475 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5EF3905179E83480082A475 /* main.m in Sources */,
+				C5EF390C179E83480082A475 /* FPAppDelegate.m in Sources */,
+				C5EF391B179EAD740082A475 /* FPPasswordEncoder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C5EF3901179E83480082A475 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5EF3902179E83480082A475 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C5EF3907179E83480082A475 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5EF3908179E83480082A475 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		C5EF390D179E83480082A475 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5EF390E179E83480082A475 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C5EF3910179E83480082A475 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C5EF3911179E83480082A475 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C5EF3913179E83480082A475 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fmp/fmp-Prefix.pch";
+				INFOPLIST_FILE = "fmp/fmp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C5EF3914179E83480082A475 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fmp/fmp-Prefix.pch";
+				INFOPLIST_FILE = "fmp/fmp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5EF38F0179E83480082A475 /* Build configuration list for PBXProject "fmp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5EF3910179E83480082A475 /* Debug */,
+				C5EF3911179E83480082A475 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5EF3912179E83480082A475 /* Build configuration list for PBXNativeTarget "fmp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5EF3913179E83480082A475 /* Debug */,
+				C5EF3914179E83480082A475 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C5EF38ED179E83480082A475 /* Project object */;
+}
