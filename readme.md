@@ -14,7 +14,7 @@ We all want straightforward passwords. fmp is here to help you.
 
 # How to use?
 
-![fmp window](/fmp.png)
+![fmp window](https://raw.github.com/aspyct/fmp/master/fmp.png)
 
 You probably don't need a tutorial on how to use this, but here are a few tips.
 
