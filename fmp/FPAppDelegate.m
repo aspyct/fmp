@@ -33,7 +33,7 @@
 }
 
 - (void)applicationWillTerminate:(NSNotification *)notification {
-    [self save_fmpPreferences];
+    [self savePreferences];
 }
 
 - (void)handleAppleEvent:(NSAppleEventDescriptor *)event withReplyEvent:(NSAppleEventDescriptor *)replyEvent {
