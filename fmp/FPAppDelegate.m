@@ -8,6 +8,7 @@
 
 #import "FPAppDelegate.h"
 
+#import "SSKeychain.h"
 #import "FPPasswordEncoder.h"
 
 @interface FPAppDelegate ()
@@ -29,6 +30,10 @@
     [[NSAppleEventManager sharedAppleEventManager] setEventHandler:self andSelector:@selector(handleAppleEvent:withReplyEvent:) forEventClass:kInternetEventClass andEventID:kAEGetURL];
     
     [self.hostField becomeFirstResponder];
+}
+
+- (void)applicationWillTerminate:(NSNotification *)notification {
+    [self save_fmpPreferences];
 }
 
 - (void)handleAppleEvent:(NSAppleEventDescriptor *)event withReplyEvent:(NSAppleEventDescriptor *)replyEvent {
@@ -145,13 +150,17 @@
 }
 #undef FP_EXIT_PREFERENCES
 
+#define FP_KEYCHAIN_SERVICE @"aspyctfmp"
+#define FP_KEYCHAIN_ACCOUNT @"master"
 - (void)saveMasterInKeychain {
-    
+    [SSKeychain setPassword:self.masterPasswordField.stringValue forService:FP_KEYCHAIN_SERVICE account:FP_KEYCHAIN_ACCOUNT];
 }
 
 - (void)recoverMasterFromKeychain {
-    
+    self.masterPasswordField.stringValue = [SSKeychain passwordForService:FP_KEYCHAIN_SERVICE account:FP_KEYCHAIN_ACCOUNT];
 }
+#undef FP_KEYCHAIN_ACCOUNT
+#undef FP_KEYCHAIN_SERVICE
 
 - (IBAction)doChangeClipboardState:(id)sender {
     [self adjustCheckboxes];
