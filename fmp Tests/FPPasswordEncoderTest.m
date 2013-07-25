@@ -30,19 +30,23 @@
     NSArray *masters = @[@"master",
                          @"hello",
                          @"makesurethat",
-                         @"yetanother"];
+                         @"yetanother",
+                         @"masterpassword"];
     NSArray *hosts = @[@"host",
                        @"aspyct.org",
                        @"password",
-                       @"host.com"];
+                       @"host.com",
+                       @"github.com"];
     NSArray *passwords = @[@"password",
                            @"world",
                            @"isalwaysthesame",
-                           @"andpassword"];
+                           @"andpassword",
+                           @"helloworld"];
     NSArray *expectedResults = @[@"hG#lJA5m%#ZJ=1X9",
                                  @"LSVDmT7Tin&5ERg9",
                                  @"Aoj%RCCkK@mhZXW%",
-                                 @"SnbeE1(qBBW(@QbU"];
+                                 @"SnbeE1(qBBW(@QbU",
+                                 @"M2OG&EMgRdBgm1AQ"];
     
     NSString *master;
     NSString *host;
